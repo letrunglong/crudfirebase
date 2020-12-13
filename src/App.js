@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-
+import {firebaseConnect} from './connfb/firebase'
 function App() {
+  console.log(firebaseConnect);
   return (
     <div className="App">
       <header className="App-header">
