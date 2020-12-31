@@ -10,9 +10,5 @@ const firebaseConfig = {
     appId: "1:265767583414:web:71337d5471bda617ba7017",
     measurementId: "G-3274EQ77FL"
   };
-//   firebase.initializeApp(firebaseConfig);
-export const firebaseConnect = firebase.initializeApp(firebaseConfig)
-// var data =firebase.database().ref("noteData");
-// data.once('value').then(function (snapshot) {
-//   console.log(snapshot);
-// })
+  firebase.initializeApp(firebaseConfig);
+export const noteData = firebase.database().ref('noteData')
